@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinkylningskalkylator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vinkylningskalkylator</h1>
+    <div class="container">
+        <label for="roomTemp">Rumstemperatur (°C): </label>
+        <input type="number" id="roomTemp" required><br><br>
+
+        <label for="wineTemp">Önskad vintemperatur (°C): </label>
+        <input type="number" id="wineTemp" required><br><br>
+
+        <button onclick="calculateCoolingTime()">Beräkna Kylningsperiod</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

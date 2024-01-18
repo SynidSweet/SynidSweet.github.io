@@ -1,17 +1,62 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     text-align: center;
-    margin-top: 50px;
+    margin: 0;
+    padding: 20px;
 }
 
 .container {
-    width: 300px;
-    margin: auto;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-input, button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
+h1 {
+    color: #5D1049;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 10px 0;
+    display: block;
+    color: #333;
+    font-weight: 700;
+}
+
+input[type='number'] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #5D1049;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #451c3f;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
 }
